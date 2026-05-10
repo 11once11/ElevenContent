@@ -55,19 +55,19 @@ h2{font-family:"Syne",sans-serif;font-size:clamp(26px,4.8vw,42px);font-weight:70
 #pain{background:var(--panel3)}
 .cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
 @media(max-width:560px){.cards-grid{grid-template-columns:1fr}}
-.card{background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:28px 24px;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s;text-align:left}
-.card:hover{border-color:var(--border2);box-shadow:0 0 50px rgba(147,51,234,.1)}
-.card::before{content:"";position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(90deg,transparent,var(--vd),transparent)}
-.card h3{font-family:"Syne",sans-serif;font-size:16px;font-weight:600;margin-bottom:10px;line-height:1.35;color:var(--w8)}
+.card{background:linear-gradient(145deg,#0e0022,#080015);border:1px solid #2a0850;border-radius:20px;padding:28px 24px;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s;text-align:left}
+.card:hover{border-color:var(--vm);box-shadow:0 0 50px rgba(147,51,234,.22),inset 0 0 30px rgba(147,51,234,.05)}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(90deg,transparent,var(--vp) 50%,transparent)}
+.card h3{font-family:"Syne",sans-serif;font-size:16px;font-weight:700;margin-bottom:10px;line-height:1.35;color:var(--w)}
 .card p{font-size:14px;color:var(--w6);line-height:1.72}
 
 /* GOLPE */
 #golpe{padding:88px 6%;overflow:hidden}
-.golpe-inner{max-width:680px;margin:0 auto;position:relative;display:flex;flex-direction:column;gap:24px;text-align:center;align-items:center}
+.golpe-inner{max-width:680px;margin:0 auto;position:relative;display:flex;flex-direction:column;gap:24px;text-align:center;align-items:center;padding:48px 8%}
 .eye-svg{position:absolute;right:-80px;top:50%;transform:translateY(-50%);width:320px;height:320px;pointer-events:none}
 @keyframes eyeblink{0%,85%,100%{opacity:.05}93%{opacity:.13}}
 .eye-svg{animation:eyeblink 5s ease-in-out infinite}
-.golpe-big{font-family:"Syne",sans-serif;font-size:clamp(28px,5.5vw,52px);font-weight:700;line-height:1.18;position:relative;z-index:1}
+.golpe-big{font-family:"Syne",sans-serif;font-size:clamp(22px,4vw,38px);font-weight:700;line-height:1.22;position:relative;z-index:1}
 .golpe-punch{font-size:clamp(16px,2.5vw,20px);color:var(--vp);font-weight:400;font-style:italic;position:relative;z-index:1}
 
 /* ANTES/DESPUES */
@@ -89,7 +89,7 @@ h2{font-family:"Syne",sans-serif;font-size:clamp(26px,4.8vw,42px);font-weight:70
 .ab-box.before .bul{background:rgba(200,50,50,.12);color:rgba(240,100,100,.8)}
 .ab-box.after .bul{background:rgba(168,85,247,.15);color:var(--vp)}
 /* ab-remate: Inter body weight, not Syne */
-.ab-remate{margin-top:40px;font-size:clamp(19px,3vw,27px);font-weight:300;line-height:1.55;font-style:italic;color:var(--w6)}
+.ab-remate{margin-top:40px;font-size:clamp(16px,2.2vw,21px);font-weight:300;line-height:1.6;font-style:italic;color:var(--w6)}
 .ab-remate strong{font-weight:600;color:var(--w8);font-style:italic;background:none;-webkit-text-fill-color:var(--w8)}
 
 /* PROCESO */
@@ -180,7 +180,7 @@ h2{font-family:"Syne",sans-serif;font-size:clamp(26px,4.8vw,42px);font-weight:70
 .faq-item p{font-size:14px;color:var(--w6);line-height:1.68}
 
 /* CTA */
-#cta{overflow:hidden;text-align:center}
+#cta{overflow:hidden;text-align:center;padding:80px 8%}
 .blob-cta{position:absolute;width:600px;height:600px;border-radius:50%;filter:blur(120px);opacity:.08;background:rgba(147,51,234,1);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
 #cta h2{max-width:640px;margin-left:auto;margin-right:auto}
 .cta-sub{font-size:15px;color:var(--w6);max-width:500px;line-height:1.8;margin:18px auto 36px;font-weight:300}
@@ -219,7 +219,7 @@ footer{text-align:center;padding:28px 6%;border-top:1px solid var(--border);font
 
     <div class="hero-block">
       <span class="eyebrow">La causa real</span>
-      <p class="body hi">Y en el fondo lo sabés: no es la música lo que está fallando.</p>
+      <p class="body hi">En el fondo lo sabés: no es tu música lo que está fallando.</p>
       <p class="body hi">Es que no estás generando las chances para que te descubran.</p>
     </div>
 
@@ -237,7 +237,7 @@ footer{text-align:center;padding:28px 6%;border-top:1px solid var(--border);font
 
   <div class="hero-ctas">
     <a href="#proceso" class="btn-wa">Ver cómo funciona</a>
-    <span class="micro">No hacemos contenido por hacer. Creamos contenido que hace que tu música llegue.</span>
+    
   </div>
 </section>
 
@@ -254,7 +254,7 @@ footer{text-align:center;padding:28px 6%;border-top:1px solid var(--border);font
       <div class="pilar"><div class="pilar-col"><svg viewBox="0 0 60 130" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="130"><rect x="3" y="118" width="54" height="9" rx="2" fill="rgba(255,255,255,0.85)"/><rect x="8" y="109" width="44" height="9" fill="rgba(255,255,255,0.7)"/><rect x="13" y="18" width="34" height="91" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.28)" stroke-width="1"/><line x1="21" y1="18" x2="21" y2="109" stroke="rgba(255,255,255,0.16)" stroke-width="1"/><line x1="30" y1="18" x2="30" y2="109" stroke="rgba(255,255,255,0.16)" stroke-width="1"/><line x1="39" y1="18" x2="39" y2="109" stroke="rgba(255,255,255,0.16)" stroke-width="1"/><rect x="8" y="9" width="44" height="9" fill="rgba(255,255,255,0.7)"/><rect x="3" y="0" width="54" height="9" rx="2" fill="rgba(255,255,255,0.85)"/></svg></div><h4>Identidad sonora</h4><p>Qué tan sólido es tu producto.</p></div>
       <div class="pilar"><div class="pilar-col"><svg viewBox="0 0 60 130" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="130"><rect x="3" y="118" width="54" height="9" rx="2" fill="rgba(192,132,252,0.85)"/><rect x="8" y="109" width="44" height="9" fill="rgba(168,85,247,0.6)"/><rect x="13" y="18" width="34" height="91" fill="rgba(147,51,234,0.12)" stroke="rgba(192,132,252,0.35)" stroke-width="1"/><line x1="21" y1="18" x2="21" y2="109" stroke="rgba(192,132,252,0.2)" stroke-width="1"/><line x1="30" y1="18" x2="30" y2="109" stroke="rgba(192,132,252,0.2)" stroke-width="1"/><line x1="39" y1="18" x2="39" y2="109" stroke="rgba(192,132,252,0.2)" stroke-width="1"/><rect x="8" y="9" width="44" height="9" fill="rgba(168,85,247,0.6)"/><rect x="3" y="0" width="54" height="9" rx="2" fill="rgba(192,132,252,0.85)"/></svg></div><h4>Contenido</h4><p>El puente entre vos y la audiencia.</p></div>
     </div>
-    <p class="pilares-note">Podés intentar hacer todo solo… pero eso lleva tiempo y energía.<br>O podés apoyarte en algo que te ordene todo.</p>
+    <p class="pilares-note">Podés intentar hacer todo solo… pero eso lleva tiempo y energía.<br>O podés apoyarte en un equipo de trabajo que te solucione este pilar.</p>
   </div>
 </section>
 
@@ -289,7 +289,7 @@ footer{text-align:center;padding:28px 6%;border-top:1px solid var(--border);font
       <line x1="120" y1="55" x2="120" y2="185" stroke="#A855F7" stroke-width="1" opacity=".22"/>
     </svg>
     <p class="golpe-big">No es que no te escuchen.<br><span class="gr">Es que ni siquiera les estás apareciendo.</span></p>
-    <p class="golpe-punch">Si eso no cambia, no pasa nada.</p>
+    <p class="golpe-punch">Si esto no cambia, no cambian los resultados.</p>
   </div>
 </section>
 
@@ -358,12 +358,12 @@ footer{text-align:center;padding:28px 6%;border-top:1px solid var(--border);font
       <div class="plan featured"><div class="plan-glow"></div><div class="plan-top-line"></div><div class="plan-inner">
         <span class="plan-badge">MÁS ELEGIDO</span><span class="plan-number">Plan 02</span><h3>Movimiento</h3><p class="plan-sub">Para que el lanzamiento no sea solo un drop</p><div class="plan-divider"></div>
         <ul><li><span class="ck">✦</span>Análisis del tema + público</li><li><span class="ck">✦</span>Definimos qué mostrar y cómo</li><li><span class="ck">✦</span>Ideas + guiones</li><li><span class="ck">✦</span>Edición de 7 reels</li><li><span class="ck">✦</span>Acompañamiento durante el lanzamiento</li></ul>
-        <span class="plan-pill">2 semanas de presencia</span>
+        <span class="plan-pill">2 semanas de vida</span>
       </div></div>
       <div class="plan"><div class="plan-glow"></div><div class="plan-top-line"></div><div class="plan-inner">
         <span class="plan-number">Plan 03</span><h3>Dirección</h3><p class="plan-sub">Para artistas que no quieren seguir resolviendo solos</p><div class="plan-divider"></div>
         <ul><li><span class="ck">✦</span>Análisis profundo de artista + público</li><li><span class="ck">✦</span>Estrategia + calendarización</li><li><span class="ck">✦</span>Ideas + guiones constantes</li><li><span class="ck">✦</span>Edición de 12 reels</li><li><span class="ck">✦</span>Acompañamiento cercano</li></ul>
-        <span class="plan-pill">1 mes de dirección</span>
+        <span class="plan-pill">1 mes de vida</span>
       </div></div>
     </div>
   </div>
@@ -454,7 +454,7 @@ footer{text-align:center;padding:28px 6%;border-top:1px solid var(--border);font
 
   </div>
   <div class="blob-cta"></div>
-  <div class="wrap" style="position:relative;z-index:1">
+  <div class="wrap" style="position:relative;z-index:1;padding-top:48px;padding-bottom:48px">
     <span class="slabel">¿Listo?</span>
     <h2>Si sentís que tu proyecto podría estar <span class="gr">mucho mejor…</span></h2>
     <p class="cta-sub">probablemente tengas razón.<br>Y si no cambiás nada… va a seguir igual.<br><br>Si querés dejar de improvisar y hacer que te empiece a llegar gente, escribinos.</p>
